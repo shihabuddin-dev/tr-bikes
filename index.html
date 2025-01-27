@@ -20,7 +20,8 @@
             theme: {
                 extend: {
                     colors: {
-                        'primary-text': '#E76F51',
+                        'primary-btn': '#E76F51',
+                        'primary-color': 'rgba(231, 111, 81, 0.1)',
                     }
                 }
             }
@@ -32,7 +33,7 @@
     <!-- header section  -->
     <header class="md:container mx-auto">
         <!-- navbar  -->
-        <nav>
+        <nav class="py-4">
             <div class="navbar bg-base-100">
                 <div class="flex-1">
                     <div class="dropdown">
@@ -45,25 +46,25 @@
                         </div>
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a>Home</a></li>
-                            <li><a>Shop</a></li>
-                            <li><a>News</a></li>
-                            <li><a>Contact</a></li>
+                            <li><a class="font-medium">Home</a></li>
+                            <li><a class="font-medium">Shop</a></li>
+                            <li><a class="font-medium">News</a></li>
+                            <li><a class="font-medium">Contact</a></li>
                         </ul>
                     </div>
-                    <a class="text-2xl font-bold">TR Bikes</a>
+                    <a class="text-4xl font-bold">TR Bikes</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 ">
-                        <li><a class="hover:border-none hover:bg-transparent">Home</a></li>
-                        <li><a class="hover:border-none hover:bg-transparent">Shop</a></li>
-                        <li><a class="hover:border-none hover:bg-transparent">News</a></li>
-                        <li><a class="hover:border-none hover:bg-transparent">Contact</a></li>
+                        <li><a class="hover:border-none hover:bg-transparent font-medium">Home</a></li>
+                        <li><a class="hover:border-none hover:bg-transparent font-medium">Shop</a></li>
+                        <li><a class="hover:border-none hover:bg-transparent font-medium">News</a></li>
+                        <li><a class="hover:border-none hover:bg-transparent font-medium">Contact</a></li>
 
                     </ul>
                 </div>
                 <div class="">
-                    <a class="btn bg-primary-text text-white">Login</a>
+                    <a class="btn bg-primary-btn text-white">Login</a>
                     <!-- Theme  -->
                     <label class="swap swap-rotate">
                         <!-- this hidden checkbox controls the state -->
@@ -85,8 +86,56 @@
                     </label>
                 </div>
             </div>
-
         </nav>
+        <!-- hero section carousel  -->
+        <div class="carousel w-full lg:h-[550px] bg-primary-color rounded-md">
+            <!-- slide 1  -->
+            <div id="slide1" class="carousel-item relative w-full">
+              <div class="md:flex p-8 lg:p-24 items-center">
+                <!-- text (left)  -->
+                 <div class="space-y-4 flex-1">
+                    <h2 class="text-4xl md:text-6xl font-bold">Ride-on R15 V4 with Smile</h2>
+                    <p class="text-base font-light">Ride the R15 V4, conquer every moment with a smile! 😎🏍️ Make your dream bike yours today!</p>
+                    <button class="btn bg-primary-btn text-white">Purchase</button>
+                 </div>
+                 <!-- images (right)  -->
+                  <div class="flex-1">
+                    <img class="max-w-full mx-auto" src="assets/carousel/bike1.png" alt="">
+                  </div>
+              </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+                class="w-full" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+                class="w-full" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+                class="w-full" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
     </header>
     <!-- main Section  -->
     <main class="md:container mx-auto">
