@@ -52,7 +52,7 @@
                             <li><a class="font-medium">Contact</a></li>
                         </ul>
                     </div>
-                    <a class="text-4xl font-bold">TR Bikes</a>
+                    <a class="text-3xl md:text-4xl font-bold">TR Bikes</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 ">
@@ -63,8 +63,11 @@
 
                     </ul>
                 </div>
-                <div class="">
-                    <a class="btn bg-primary-btn text-white">Login</a>
+                <div class="hidden lg:block">
+                    <a class=" btn bg-primary-btn text-white">Login</a>
+
+                </div>
+                <div>
                     <!-- Theme  -->
                     <label class="swap swap-rotate">
                         <!-- this hidden checkbox controls the state -->
@@ -192,13 +195,13 @@
     <!-- main Section  -->
     <main class="md:container mx-auto">
         <!-- Featured Bikes In This Year  -->
-        <section>
+        <section class="mb-12 lg:mb-24">
             <div class="text-center">
-                <h2 class="text-[40px] font-semibold">Featured Bikes In This Year</h2>
-                <p class="text-primary-btn text-sm font-semibold"><small class="border-primary-btn border-b-2">Best bike
+                <h2 class="text-3xl md:text-[40px] font-semibold">Featured Bikes In This Year</h2>
+                <p class="text-primary-btn text-sm font-semibold"><small class="border-red-200 border-b-2">Best bike
                         collection</small></p>
             </div>
-            <div class="grid md:grid-cols-3 justify-items-center gap-4 md:pt-12">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 justify-items-center gap-4 md:pt-12">
                 <div>
                     <img src="assets/images/feature-bike-1.png" alt="this is new arrival bikes">
                 </div>
@@ -211,9 +214,50 @@
             </div>
         </section>
         <!-- latest News  -->
-        <section>
-            <h2 class="text-[40px] font-semibold">latest News</h2>
-            
+        <section class="mb-12 lg:mb-24">
+            <h2 class="text-3xl md:text-[40px] font-semibold text-center">latest News</h2>
+            <!-- news card  -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16 justify-items-center">
+                <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure>
+                        <img src="assets/images/latest1.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body p-6">
+                        <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+                        <p>Unleash the ultimate beast with Ducati XDiavel S-73 – where power meets elegance. 🏍️🔥</p>
+                        <div class="card-actions justify-start">
+                            <button class=" btn bg-primary-btn text-white"> <a>Read More...</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure>
+                        <img src="assets/images/latest2.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body p-6">
+                        <h2 class="card-title">Motorcycles & Scooters 19A</h2>
+                        <p>Rule the streets with Motorcycles & Scooters 19A – a perfect blend of style and performance.
+                            🏍️🔥</p>
+                        <div class="card-actions justify-start">
+                            <button class=" btn bg-primary-btn text-white"> <a>Read More...</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure>
+                        <img src="assets/images/latest3.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body p-6">
+                        <h2 class="card-title">Honda CBR500R 2025</h2>
+                        <p>Feel the thrill of precision with the Honda CBR500R 2025 – where speed meets style. 🏍️🔥
+                            Dominate the road today!</p>
+                        <div class="card-actions justify-start">
+                            <button class=" btn bg-primary-btn text-white"> <a>Read More...</a></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </section>
     </main>
     <!-- footer section  -->
